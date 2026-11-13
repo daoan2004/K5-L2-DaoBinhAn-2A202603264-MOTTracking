@@ -1,0 +1,35 @@
+Số frame in theo CVAT (bắt đầu từ 0). Trong gt.txt, frame_id = frame CVAT + 1.
+
+=== File MOT 1.1: DaoBinhAn_mot.zip ===
+  Số track ID: 5   |   Tổng số box: 651
+  [OK]        Đúng 5 track ID.
+
+  Track | Frame có mặt | Số frame | Đoạn vắng (outside)
+      1 |   0–149      |      150 | -
+      2 |   0–149      |      150 | -
+      3 |   0–139      |      125 | 108–122
+      4 |   0–149      |      137 | 120–121, 137–147
+      5 |  61–149      |       89 | -
+
+
+=== File CVAT for video 1.1: DaoBinhAn_cvat_video.zip ===
+
+  Track | Nhãn   | Frame thấy | Keyframe | KF/100 frame | Frame occluded | Lần bật outside
+      0 | person |        150 |       62 |         41.3 |             44 |               0
+              Track 0: keyframe ở frame [0, 5, 10, 19, 21, 22, 24, 25, 26, 27, 28, 36, 55, 56, 57, 58, 61, 63, 64, 66, 70, 75, 76, 77, 78, 80, 85, 88, 90, 92, 93, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 112, 113, 114, 115, 116, 117, 118, 119, 120, 130, 140, 142, 143, 144, 146, 147, 149]
+      1 | person |        150 |       22 |         14.7 |             65 |               0
+              Track 1: keyframe ở frame [0, 10, 20, 30, 40, 50, 60, 65, 66, 70, 71, 78, 79, 80, 90, 100, 110, 120, 130, 131, 140, 149]
+      2 | person |        125 |       21 |         16.8 |             36 |               2
+              Track 2: keyframe ở frame [0, 5, 21, 24, 25, 29, 34, 41, 50, 55, 59, 65, 70, 73, 81, 84, 88, 89, 90, 123, 136]
+      3 | person |        137 |       88 |         64.2 |             65 |               2
+              Track 3: keyframe ở frame [0, 1, 2, 3, 4, 5, 6, 9, 12, 16, 19, 21, 25, 27, 29, 33, 36, 37, 38, 41, 45, 47, 49, 50, 52, 53, 55, 58, 59, 60, 61, 62, 63, 64, 66, 68, 70, 74, 75, 76, 77, 80, 83, 84, 85, 86, 87, 89, 90, 93, 94, 95, 96, 97, 100, 102, 103, 104, 105, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 136, 148, 149]
+  [CẢNH BÁO]  Track 3: 64 keyframe / 100 frame > 50. Quá dày, dồn keyframe vào chỗ rẽ / dừng / bị che.
+      4 | person |         89 |       18 |         20.2 |             40 |               0
+              Track 4: keyframe ở frame [61, 64, 70, 80, 84, 90, 100, 101, 102, 103, 104, 105, 106, 110, 120, 130, 140, 149]
+
+  Tổng: 211 keyframe / 651 frame có mặt = 32.4 keyframe / 100 frame
+  [OK]        Đọc được 5 track từ annotations.xml.
+
+=== Tóm tắt ===
+  Lỗi: 0   |   Cảnh báo: 1
+  Không có lỗi định dạng. Mở CVAT xem lại từng [CẢNH BÁO]; cảnh báo đúng ý bạn thì ghi lý do vào báo cáo.
